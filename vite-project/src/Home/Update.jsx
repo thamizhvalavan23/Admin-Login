@@ -26,7 +26,7 @@ const Update = () => {
         event.preventDefault();
         try {
 
-            const {data} = await axios.put(`http://localhost:3000/api/admin/update${upid}`, {first_name , last_name , email})
+            const {data} = await axios.put(`https://admin-login-back-end.onrender.com/api/admin/update${upid}`, {first_name , last_name , email})
 
             if (data.success) {
                 console.log("good code");
