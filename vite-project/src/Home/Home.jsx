@@ -20,7 +20,7 @@ const Home = () => {
 
         try {
 
-            const { data } = await axios.get("http://localhost:3000/api/admin/all-data");
+            const { data } = await axios.get("https://admin-login-back-end.onrender.com/api/admin/all-data");
 
             if (data.success) {
                 setData(data.find)
@@ -38,7 +38,7 @@ const Home = () => {
 
     const deleteUser = async (userId, onDelete) => {
         try {
-          const response = await axios.delete(`http://localhost:3000/api/admin/delete${userId}`);
+          const response = await axios.delete(`https://admin-login-back-end.onrender.com/api/admin/delete${userId}`);
       
           if (response.data.success) {
             alert("User deleted successfully!");

@@ -17,7 +17,7 @@ const Login = () => {
 
         try {
 
-            const {data} = await axios.post("http://localhost:3000/api/admin/login" , {email , password});
+            const {data} = await axios.post("https://admin-login-back-end.onrender.com/api/admin/login" , {email , password});
 
             if (data.success) {
 
